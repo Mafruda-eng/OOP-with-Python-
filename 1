@@ -1,0 +1,20 @@
+class Account:
+    def __init__(self, balance, account ):
+        self.balance = balance
+        self.account  = account
+        print(self.balance)
+    def debit(self,amount):
+        cal = self.balance-amount
+        print(self.balance)
+
+    def credit(self,amount):
+        self.balance = self.balance + amount
+        print(self.balance)
+
+    def get_balance(self):
+        return self.balance
+
+obj1 = Account(1000000, 2002)
+obj1.debit(345)
+obj1.credit(4567)
+obj1.get_balance()
