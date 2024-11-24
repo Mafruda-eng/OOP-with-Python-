@@ -1,0 +1,25 @@
+class Student:
+    def __init__(self,math, phy, che):
+        self.math = math
+        self.phy = phy
+        self.che = che
+
+    def Avg(self):
+        sum = self.math+self.phy+self.che
+        avg = sum/3
+        print(avg)
+
+    def mul(self):
+        mul = self.math*self.phy*self.che
+        print(mul)
+
+    def pow(self):
+        power = self.math**self.che
+        print(pow)
+
+
+
+obj1 = Student(92, 90, 86)
+obj1.Avg()
+obj1.mul()
+obj1.pow()
